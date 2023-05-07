@@ -1,0 +1,406 @@
+:root {
+  --green: #4d96a9;
+  --lightGreen: #8fe3f9;
+  --purple: #855fb1;
+  --lightPurple: #d9b8ff;
+  --black: #28283d;
+  --gray: #87879d;
+  --white: #fafafa;
+  --googleFont: "Red Hat Display", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--googleFont);
+  color: var(--gray);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+.topLogo {
+  display: block;
+  margin: 4.8rem auto 5.4rem;
+}
+
+.imgHero {
+  margin-bottom: 4.8rem;
+  width: 100%;
+}
+.imgHeroLeft {
+  display: none;
+}
+.imgHeroRight {
+  display: none;
+}
+
+.container {
+  padding: 0 2.4rem;
+  text-align: center;
+}
+
+/******** TOP SECTION  **********/
+
+.topSection > h1 {
+  margin-bottom: 2.4rem;
+
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 44px;
+
+  color: var(--black);
+}
+
+.topSection > p {
+  margin-bottom: 3.2rem;
+
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 26px;
+}
+
+.btn {
+  margin: 0 auto;
+  display: block;
+
+  border: none;
+  border-radius: 32px;
+
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.btnGreen {
+  margin-bottom: 1.6rem;
+  padding: 1.6rem 4rem;
+
+  background-color: var(--green);
+}
+
+.btnPurple {
+  margin-bottom: 6.4rem;
+  padding: 1.6rem 2.9rem;
+
+  background-color: var(--purple);
+}
+
+.btnGreen > span {
+  color: var(--lightGreen);
+}
+
+.btnPurple > span {
+  color: var(--lightPurple);
+}
+
+.btnGreen:hover {
+  background-color: #71c0d4;
+}
+
+.btnPurple:hover {
+  background-color: #b18bdd;
+}
+
+.lineCircle {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  background-color: var(--gray);
+  width: 1px;
+  height: 84px;
+}
+.circle {
+  margin-bottom: 6.4rem;
+
+  width: 56px;
+  height: 56px;
+
+  border: 1px solid var(--gray);
+  background-color: var(--white);
+  color: var(--gray);
+
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+/****** grid  **********/
+.gridContainer {
+  margin-bottom: 6.4rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.gridContainer > img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/******** MIDDLE SECTION  **********/
+
+.middleSection > h1 {
+  margin-bottom: 2.4rem;
+
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 26px;
+  letter-spacing: 4px;
+
+  color: var(--green);
+}
+
+.middleSection > h2 {
+  margin-bottom: 3.2rem;
+
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 36px;
+
+  color: var(--black);
+}
+
+.middleSection > p {
+  margin-bottom: 17.6rem;
+
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 26px;
+}
+
+/******** BOTTOM SECTION  **********/
+
+.bottomSection {
+  padding: 9.2rem 2.4rem 7.2rem;
+
+  background: url(./assets/mobile/image-footer.jpg) no-repeat,
+    rgba(0, 200, 255, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+
+  text-align: center;
+
+  position: relative;
+
+  color: var(--white);
+}
+
+.bottomSection > h1 {
+  margin-bottom: 2.4rem;
+
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 36px;
+}
+
+.bottomSection > p {
+  margin-bottom: 3.2rem;
+
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 26px;
+}
+
+.bottomSection > button {
+  margin-bottom: 0;
+}
+
+.bottomSection > .lineCircle {
+  position: absolute;
+  top: -12rem;
+  left: 0;
+}
+
+/********** TABLET  *********/
+
+@media (min-width: 700px) {
+  .topLogo {
+    margin: 4.8rem auto 6.4rem;
+  }
+
+  .imgHero {
+    margin-bottom: 7.2rem;
+  }
+
+  .container {
+    padding: 0 4rem;
+  }
+
+  /******** TOP SECTION  **********/
+
+  .topSection {
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    width: 45.7rem;
+  }
+
+  .topSection > h1 {
+    font-size: 4.8rem;
+    line-height: 48px;
+  }
+
+  .btn {
+    display: inline-block;
+  }
+
+  .btnGreen {
+    margin-bottom: 0;
+  }
+
+  .btnPurple {
+    margin-bottom: 0;
+    margin-left: 1.6rem;
+  }
+
+  .circle {
+    margin-bottom: 6.7rem;
+  }
+
+  /****** grid  **********/
+  .gridContainer {
+    margin-bottom: 4.8rem;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.1rem;
+  }
+
+  /******** MIDDLE SECTION  **********/
+
+  .middleSection {
+    margin: 0 auto;
+    width: 57.3rem;
+  }
+
+  .middleSection > h1 {
+    margin-bottom: 1.6rem;
+  }
+
+  .middleSection > h2 {
+    font-size: 4rem;
+    line-height: 44px;
+  }
+
+  .middleSection > p {
+    margin-bottom: 19.2rem;
+  }
+
+  /******** BOTTOM SECTION  **********/
+  .bottomSection {
+    padding: 9.2rem 9.7rem 6.6rem;
+  }
+
+  .bottomSection > h1 {
+    margin-bottom: 3.2rem;
+
+    font-size: 4rem;
+    line-height: 44px;
+  }
+
+  .bottomSection > p {
+    margin-bottom: 4rem;
+  }
+}
+
+/********** Desktop  *********/
+
+@media (min-width: 1400px) {
+  .topLogo {
+    margin: 8rem auto 10.8rem;
+  }
+
+  .imgHero {
+    display: none;
+  }
+  .imgHeroLeft {
+    display: block;
+
+    position: absolute;
+    top: 16.9rem;
+    left: -3.2rem;
+  }
+  .imgHeroRight {
+    display: block;
+
+    position: absolute;
+    top: 22.4rem;
+    right: -3.2rem;
+  }
+
+  .container {
+    padding: 0 16.5rem;
+  }
+
+  /******** TOP SECTION  **********/
+
+  .topSection {
+    margin: 0 auto;
+    margin-bottom: 11.7rem;
+    width: 54rem;
+  }
+
+  .topSection > h1 {
+    font-size: 6.4rem;
+    line-height: 64px;
+  }
+
+  .circle {
+    margin-bottom: 6.4rem;
+  }
+
+  /****** grid  **********/
+  .gridContainer {
+    margin-bottom: 8rem;
+
+    gap: 3rem;
+  }
+
+  /******** MIDDLE SECTION  **********/
+
+  .middleSection {
+    width: 54rem;
+  }
+
+  .middleSection > p {
+    margin-bottom: 18.4rem;
+  }
+
+  /******** BOTTOM SECTION  **********/
+  .bottomSection {
+    padding: 11.6rem 16.5rem 10.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bottomSection > h1 {
+    margin-bottom: 0;
+  }
+
+  .bottomSection > p {
+    margin-bottom: 0;
+  }
+
+  .bottomSection > button {
+    white-space: nowrap;
+  }
+}
